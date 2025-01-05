@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Script from 'next/script';
 import { Button } from "@/components/ui/Button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/Accordion";
 import { UserCircle, MessageCircle, Calendar, FileText, Menu } from 'lucide-react';
@@ -12,12 +13,6 @@ export default function LandingPage() {
   const [role, setRole] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Enviado:', { email, role });
-    setEmail('');
-    setRole('');
-  };
 
   return (
     <>
@@ -199,7 +194,10 @@ export default function LandingPage() {
               </p>
             </div>
             {/* Script de Typeform */}
-            <script src="https://embed.typeform.com/next/embed.js"></script>
+            <Script
+              src="https://embed.typeform.com/next/embed.js"
+              strategy="afterInteractive"
+            />
           </section>
 
 
