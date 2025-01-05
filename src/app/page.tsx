@@ -8,6 +8,14 @@ import { UserCircle, MessageCircle, Calendar, FileText, Menu } from 'lucide-reac
 import Image from 'next/image';
 import Head from 'next/head';
 
+// Función para desplazamiento suave a una sección
+const scrollToSection = (id: string) => {
+  const section = document.querySelector(id);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+
 export default function LandingPage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -33,20 +41,33 @@ export default function LandingPage() {
 
           {/* Menú en pantallas grandes */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#features" className="text-purple-700 hover:text-purple-500 transition-all duration-300">Características</a>
-            <a href="#experiment" className="text-purple-700 hover:text-purple-500 transition-all duration-300">Unirse al Experimento</a>
-            <a href="#faq" className="text-purple-700 hover:text-purple-500 transition-all duration-300">Preguntas Frecuentes</a>
+            <button onClick={() => scrollToSection('#features')} className="text-purple-700 hover:text-purple-500 transition-all duration-300">
+              Características
+            </button>
+            <button onClick={() => scrollToSection('#experiment')} className="text-purple-700 hover:text-purple-500 transition-all duration-300">
+              Unirse al Experimento
+            </button>
+            <button onClick={() => scrollToSection('#faq')} className="text-purple-700 hover:text-purple-500 transition-all duration-300">
+              Preguntas Frecuentes
+            </button>
           </nav>
 
           {/* Menú desplegable en pantallas pequeñas */}
           <div className={`w-full md:hidden fixed top-0 left-0 bg-white z-50 transition-transform duration-300 ease-in-out ${isMenuOpen ? 'transform translate-y-0' : 'transform -translate-y-full'}`}>
             <nav className="flex flex-col space-y-4 p-6">
               <button className="self-end text-purple-700 text-3xl" onClick={() => setIsMenuOpen(false)}>×</button>
-              <a href="#features" className="text-purple-700 hover:text-purple-500 text-lg">Características</a>
-              <a href="#experiment" className="text-purple-700 hover:text-purple-500 text-lg">Unirse al Experimento</a>
-              <a href="#faq" className="text-purple-700 hover:text-purple-500 text-lg">Preguntas Frecuentes</a>
+              <button onClick={() => { setIsMenuOpen(false); scrollToSection('#features'); }} className="text-purple-700 hover:text-purple-500 text-lg">
+                Características
+              </button>
+              <button onClick={() => { setIsMenuOpen(false); scrollToSection('#experiment'); }} className="text-purple-700 hover:text-purple-500 text-lg">
+                Unirse al Experimento
+              </button>
+              <button onClick={() => { setIsMenuOpen(false); scrollToSection('#faq'); }} className="text-purple-700 hover:text-purple-500 text-lg">
+                Preguntas Frecuentes
+              </button>
             </nav>
           </div>
+
         </header>
 
         <main>
@@ -120,7 +141,7 @@ export default function LandingPage() {
           </section>
 
           {/* Características */}
-          <section className="py-12 md:py-16 bg-gradient-to-b from-purple-50 to-purple-100">
+          <section id="features" className="py-12 md:py-16 bg-gradient-to-b from-purple-50 to-purple-100">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-purple-800 mb-12 text-center">
                 Características Principales
