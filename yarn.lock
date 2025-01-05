@@ -513,6 +513,19 @@
   resolved "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.10.8.tgz"
   integrity sha512-PBu00mtt95jbKFi6Llk9aik8bnR3tR/oQP1o3TSi+iG//+Q2RTIzCEgKkHG8BB86kxMNW6O8wku+Lmi+QFR6jA==
 
+"@typeform/embed-react@^4.2.0":
+  version "4.2.0"
+  resolved "https://registry.npmjs.org/@typeform/embed-react/-/embed-react-4.2.0.tgz"
+  integrity sha512-ZMMoRvDNRw9NawG/fF8gNoyo1HNUVC6UQvWQBagC5EcBjvMbArNSiEIcKsFVJeMw5j5DeSBVqY7WOTPje3ZjMQ==
+  dependencies:
+    "@typeform/embed" "5.2.0"
+    fast-deep-equal "^3.1.3"
+
+"@typeform/embed@5.2.0":
+  version "5.2.0"
+  resolved "https://registry.npmjs.org/@typeform/embed/-/embed-5.2.0.tgz"
+  integrity sha512-V4VZEgBStq60Vhu4ruszOoGcyrZfu4les6h8ODcIen51xy69RKlk4uAI5V61VKa3ckJwfqiLyf1n0oHfo04G5A==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
