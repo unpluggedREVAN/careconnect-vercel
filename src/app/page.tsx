@@ -1,11 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useEffect } from 'react';
-import { Widget } from '@typeform/embed-react';
 import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/Select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/Accordion";
 import { UserCircle, MessageCircle, Calendar, FileText, Menu } from 'lucide-react';
 import Image from 'next/image';
