@@ -9,10 +9,7 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 export default function LandingPage() {
-  const [email, setEmail] = useState('');
-  const [role, setRole] = useState('');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
 
   return (
     <>
