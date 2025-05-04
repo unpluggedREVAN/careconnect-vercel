@@ -105,8 +105,8 @@ export default function LandingPage() {
                     <UserCircle className="h-8 w-8 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl text-purple-700">Conéctate con Profesionales Locales</h3>
-                    <p className="text-purple-600">Encuentra profesionales de la salud en tu área de manera rápida y fácil.</p>
+                    <h3 className="font-semibold text-xl text-purple-700">Conexión directa con profesionales confiables</h3>
+                    <p className="text-purple-600"> Encontrá al profesional de la salud que necesitás en tu zona. Solo escribinos por WhatsApp y nosotros nos encargamos del resto.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -114,8 +114,8 @@ export default function LandingPage() {
                     <MessageCircle className="h-8 w-8 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl text-purple-700">Servicios Especializados</h3>
-                    <p className="text-purple-600">Desde cuidado geriátrico hasta terapias especializadas, adaptados a tus necesidades.</p>
+                    <h3 className="font-semibold text-xl text-purple-700">Seguimiento y registro de cada servicio</h3>
+                    <p className="text-purple-600"> Llevamos un control detallado de cada atención brindada para garantizar continuidad, calidad y confianza en los cuidados.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -123,8 +123,8 @@ export default function LandingPage() {
                     <FileText className="h-8 w-8 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl text-purple-700">Registros de Servicio</h3>
-                    <p className="text-purple-600">Asegura la continuidad del cuidado con registros detallados de los servicios.</p>
+                    <h3 className="font-semibold text-xl text-purple-700"> Servicios especializados adaptados a vos</h3>
+                    <p className="text-purple-600">Nos aseguramos de entender tu situación para asignarte el profesional más adecuado y darte seguimiento cercano.</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -132,8 +132,8 @@ export default function LandingPage() {
                     <Calendar className="h-8 w-8 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-xl text-purple-700">Gestión Fácil</h3>
-                    <p className="text-purple-600">Administra citas, perfiles y comunícate directamente con los enfermeros.</p>
+                    <h3 className="font-semibold text-xl text-purple-700"> Gestión humana, simple y rápida</h3>
+                    <p className="text-purple-600"> Olvídate de complicaciones. Coordinamos todo por WhatsApp: desde la solicitud inicial hasta la asignación del profesional y el seguimiento posterior.</p>
                   </div>
                 </li>
               </ul>
@@ -149,27 +149,27 @@ export default function LandingPage() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[
                   {
-                    title: 'Perfiles detallados de profesionales en el cuidado y la salud',
+                    title: 'Conexión directa por WhatsApp',
                     description:
-                      'Accede a información completa sobre la experiencia, especialidades y calificaciones de los profesionales de la salud.',
+                      'Conecta fácilmente con profesionales del cuidado mediante WhatsApp. Sin apps, sin complicaciones.',
                     image: 'https://images.pexels.com/photos/1350560/pexels-photo-1350560.jpeg',
                   },
                   {
-                    title: 'Gestión de solicitudes de servicio',
+                    title: 'Revisión previa del perfil profesional',
                     description:
-                      'Solicita y programa servicios de cuidado de salud de manera fácil y eficiente a través de nuestra plataforma intuitiva.',
+                      'Antes de confirmar el servicio, recibes el perfil del profesional con experiencia, especialidades y referencias verificadas.',
                     image: 'https://images.pexels.com/photos/5234506/pexels-photo-5234506.jpeg',
                   },
                   {
-                    title: 'Chat en tiempo real',
+                    title: 'Atención personalizada según tus necesidades',
                     description:
-                      'Comunícate instantáneamente con los profesionales de la salud para consultas rápidas o coordinación de cuidados.',
+                      'Nos aseguramos de entender tu situación para asignarte el profesional más adecuado y darte seguimiento cercano.',
                     image: 'https://images.pexels.com/photos/7120126/pexels-photo-7120126.jpeg',
                   },
                   {
-                    title: 'Seguimiento de registros de servicio',
+                    title: 'Seguimiento humano y confiable',
                     description:
-                      'Mantén un historial detallado de todos los servicios recibidos, asegurando una continuidad en el cuidado y facilitando futuras consultas.',
+                      'Nuestro equipo te acompaña antes, durante y después del servicio para garantizar seguridad, calidad y satisfacción.',
                     image: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg',
                   },
                 ].map((feature, index) => (
@@ -229,27 +229,55 @@ export default function LandingPage() {
                 <AccordionItem value="item-1">
                   <AccordionTrigger className="font-semibold">¿Qué es CareConnect y cómo funciona?</AccordionTrigger>
                   <AccordionContent className="text-gray-700">
-                    CareConnect es una plataforma digital que conecta a médicos y pacientes de forma segura y eficiente. Permite a los médicos gestionar citas, bitácoras y expedientes médicos, mientras que los pacientes tienen acceso a un expediente privado e interconectado, facilitando el manejo de su información médica entre instituciones. A través de un sistema de emparejamiento inteligente, CareConnect asegura conexiones directas y efectivas en versiones web y móvil.
+                    <p>
+                      CareConnect es un servicio de conexión humana que enlaza pacientes con profesionales de salud de forma directa, rápida y segura. En lugar de utilizar una plataforma digital, la interacción sucede a través de WhatsApp, donde nuestro equipo se encarga de gestionar todo el proceso: desde la solicitud del paciente hasta la asignación del profesional adecuado.
+                    </p>
+                    <p>
+                      Nos aseguramos de facilitar el acceso a atención personalizada y confiable, manteniendo un registro interno de cada servicio brindado para garantizar continuidad en los cuidados y una experiencia cercana, sin complicaciones tecnológicas.
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
                   <AccordionTrigger className="font-semibold">¿Quién puede usar CareConnect?</AccordionTrigger>
-                  <AccordionContent className="text-gray-700">
-                    CareConnect está diseñado para ser utilizado por una amplia variedad de usuarios en el ámbito de la salud, incluyendo pacientes, cuidadores gerontológicos, asistentes de pacientes, asistentes de enfermeros y enfermeros. Cada usuario tiene acceso a herramientas adaptadas a sus necesidades específicas, permitiendo una gestión eficiente y colaborativa de la atención médica.
+                  <AccordionContent className="text-gray-700 space-y-4">
+                    <p>
+                      CareConnect está pensado para cualquier persona que necesite apoyo en el cuidado de la salud o desee brindar sus servicios profesionales. Nuestro servicio conecta directamente a:
+                    </p>
+                    <ul className="list-disc pl-5 space-y-2">
+                      <li>
+                        Pacientes y familias que buscan atención confiable, humana y accesible.
+                      </li>
+                      <li>
+                        Cuidadores gerontológicos, asistentes de pacientes, enfermeros y otros profesionales de la salud interesados en ofrecer sus servicios por contrato.
+                      </li>
+                    </ul>
+                    <p>
+                      A través de WhatsApp, nuestro equipo gestiona las conexiones y asegura que cada solicitud se atienda de forma personalizada, sin necesidad de que los usuarios interactúen con una plataforma compleja.
+                    </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger className="font-semibold">¿Qué servicios ofrece CareConnect?</AccordionTrigger>
-                  <AccordionContent className="text-gray-700">
-                    <ul className="list-disc pl-5 space-y-2">
-                      <li><strong>Gestión de citas:</strong> Permite a los pacientes agendar consultas y a los médicos administrar sus horarios.</li>
-                      <li><strong>Expedientes médicos digitales:</strong> Facilita el almacenamiento, acceso y compartición de información médica de manera privada y segura.</li>
-                      <li><strong>Bitácoras médicas:</strong> Herramientas para que los médicos registren y supervisen tratamientos y procedimientos.</li>
-                      <li><strong>Conexiones personalizadas:</strong> Un sistema de emparejamiento que conecta a pacientes con el profesional de salud adecuado según sus necesidades.</li>
-                      <li><strong>Seguimiento médico:</strong> Ayuda a los pacientes a llevar un control integral de su salud y tratamientos.</li>
-                    </ul>
-                  </AccordionContent>
-                </AccordionItem>
+                <AccordionTrigger className="font-semibold">¿Qué servicios ofrece CareConnect?</AccordionTrigger>
+                <AccordionContent className="text-gray-700">
+                  <ul className="list-disc pl-5 space-y-2">
+                    <li>
+                      <strong>Gestión de citas personalizada:</strong> Coordinamos por ti la disponibilidad del profesional ideal y agendamos la consulta según tus horarios.
+                    </li>
+                    <li>
+                      <strong>Seguimiento del cuidado:</strong> Llevamos un registro interno de cada servicio prestado, facilitando la continuidad del tratamiento y la comunicación entre profesional y paciente.
+                    </li>
+                    <li>
+                      <strong>Conexiones a la medida:</strong> Analizamos tu necesidad y te conectamos con el profesional más adecuado para tu situación, ya sea un enfermero, asistente o cuidador especializado.
+                    </li>
+                    <li>
+                      <strong>Bitácoras y reportes del servicio:</strong> El profesional registra sus observaciones y cuidados en cada visita, y nuestro equipo te comparte los reportes relevantes para mantenerte al tanto.
+                    </li>
+                    <li>
+                      <strong>Soporte humano constante:</strong> Siempre estarás acompañado. Ante cualquier duda, urgencia o necesidad de ajuste, podés escribirnos directamente y nosotros lo gestionamos.
+                    </li>
+                  </ul>
+                </AccordionContent>
+              </AccordionItem>
               </Accordion>
             </div>
           </section>
