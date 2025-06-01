@@ -82,13 +82,19 @@ export default function LandingPage() {
                 Revolucionando el Cuidado en el Hogar
               </h1>
               <p className="text-lg md:text-xl max-w-xl mx-auto mb-8">
-                Conéctate con Profesionales de la Salud y cuida a tus seres queridos en la comodidad de tu hogar.
+                Conectá a tus seres queridos con profesionales de la salud certificados, sin salir de casa. Coordinamos todo de forma rápida, humana y sin complicaciones.
               </p>
-              <Button 
-                onClick={() => window.location.href = "#experiment"} 
+              <Button
+                asChild
                 className="bg-white text-purple-600 hover:bg-purple-200 font-bold py-2 px-6 rounded-full text-lg shadow-lg transition-transform transform hover:scale-105 duration-300 focus:outline-none focus:ring-4 focus:ring-purple-300"
               >
-                ¡Sé parte de algo nuevo!
+                <a
+                  href="https://wa.me/50687711311"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ¡Solicitá tu servicio ahora por WhatsApp!
+                </a>
               </Button>
             </div>
           </section>
@@ -144,32 +150,32 @@ export default function LandingPage() {
           <section id="features" className="py-12 md:py-16 bg-gradient-to-b from-purple-50 to-purple-100">
             <div className="container mx-auto px-4">
               <h2 className="text-3xl md:text-4xl font-bold text-purple-800 mb-12 text-center">
-                Características Principales
+                Beneficios que vas a obtener
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                 {[
                   {
-                    title: 'Conexión directa por WhatsApp',
+                    title: 'Conexión directa con profesionales verificados',
                     description:
-                      'Conecta fácilmente con profesionales del cuidado mediante WhatsApp. Sin apps, sin complicaciones.',
+                      'Conectamos a pacientes con enfermeros y cuidadores certificados, según sus necesidades.',
                     image: 'https://images.pexels.com/photos/1350560/pexels-photo-1350560.jpeg',
                   },
                   {
-                    title: 'Revisión previa del perfil profesional',
+                    title: 'Sin complicaciones',
                     description:
-                      'Antes de confirmar el servicio, recibes el perfil del profesional con experiencia, especialidades y referencias verificadas.',
+                      'Gestionamos todo el servicio por vos: desde el primer contacto hasta el seguimiento, todo por WhatsApp.',
                     image: 'https://images.pexels.com/photos/5234506/pexels-photo-5234506.jpeg',
                   },
                   {
-                    title: 'Atención personalizada según tus necesidades',
+                    title: 'Atención personalizada',
                     description:
-                      'Nos aseguramos de entender tu situación para asignarte el profesional más adecuado y darte seguimiento cercano.',
+                      'Entendemos tu situación y te asignamos el profesional adecuado para una atención eficiente y humana.',
                     image: 'https://images.pexels.com/photos/7120126/pexels-photo-7120126.jpeg',
                   },
                   {
-                    title: 'Seguimiento humano y confiable',
+                    title: 'Seguimiento constante',
                     description:
-                      'Nuestro equipo te acompaña antes, durante y después del servicio para garantizar seguridad, calidad y satisfacción.',
+                      'Nuestro equipo te acompaña durante todo el proceso para asegurarnos de que recibas el mejor servicio posible.',
                     image: 'https://images.pexels.com/photos/845451/pexels-photo-845451.jpeg',
                   },
                 ].map((feature, index) => (
@@ -198,9 +204,9 @@ export default function LandingPage() {
           {/* Call to Action (Únete al Experimento) */}
           <section id="experiment" className="py-20 md:py-24 bg-purple-600 text-white">
             <div className="container mx-auto px-4 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Curioso por saber más?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">¿Querés que te contactemos?</h2>
               <p className="mb-8 text-lg md:text-xl">
-                Ayúdanos a probar esta nueva plataforma y sé el primero en acceder a servicios revolucionarios.
+                Dejanos tus datos y te escribimos sin compromiso:
               </p>
               {/* Embedding Typeform */}
               <div 
@@ -208,7 +214,7 @@ export default function LandingPage() {
                 className="w-full md:w-3/4 lg:w-1/2 h-[600px] md:h-[500px] rounded-lg shadow-lg overflow-hidden mx-auto"
               ></div>
               <p className="mt-4 text-sm">
-                Al registrarte, quedarás en una lista de espera para obtener más información.
+                Nos estaremos poniendo en contacto lo más pronto posible.
               </p>
             </div>
             {/* Script de Typeform */}
@@ -216,6 +222,29 @@ export default function LandingPage() {
               src="https://embed.typeform.com/next/embed.js"
               strategy="afterInteractive"
             />
+          </section>
+
+          {/* Sección CTA emocional diferenciada visualmente */}
+          <section className="py-20 bg-gray-100 text-purple-800">
+            <div className="container mx-auto px-4 text-center max-w-3xl">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                Comenzá a recibir atención médica de calidad sin complicaciones.
+              </h2>
+              <p className="text-lg md:text-xl mb-8">
+                Unite a <span className="font-semibold">CareConnect</span> y cuidá de tus seres queridos con la ayuda de profesionales confiables y humanos.
+              </p>
+              <a
+                href="https://wa.me/50687711311" // Cambiá por tu número real
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-purple-600 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-purple-700 transition-colors duration-300"
+              >
+                ¡Solicitá más información ahora!
+              </a>
+              <p className="mt-6 text-sm text-purple-600">
+                Sin formularios largos. Solo escribinos y nosotros nos encargamos del resto.
+              </p>
+            </div>
           </section>
 
 
@@ -230,52 +259,32 @@ export default function LandingPage() {
                   <AccordionTrigger className="font-semibold">¿Qué es CareConnect y cómo funciona?</AccordionTrigger>
                   <AccordionContent className="text-gray-700">
                     <p>
-                      CareConnect es un servicio de conexión humana que enlaza pacientes con profesionales de salud de forma directa, rápida y segura. En lugar de utilizar una plataforma digital, la interacción sucede a través de WhatsApp, donde nuestro equipo se encarga de gestionar todo el proceso: desde la solicitud del paciente hasta la asignación del profesional adecuado.
-                    </p>
-                    <p>
-                      Nos aseguramos de facilitar el acceso a atención personalizada y confiable, manteniendo un registro interno de cada servicio brindado para garantizar continuidad en los cuidados y una experiencia cercana, sin complicaciones tecnológicas.
+                      CareConnect es una plataforma que conecta a pacientes con profesionales de la salud para atención domiciliaria de forma rápida y segura.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-2">
-                  <AccordionTrigger className="font-semibold">¿Quién puede usar CareConnect?</AccordionTrigger>
+                  <AccordionTrigger className="font-semibold">¿Cómo solicito un servicio?</AccordionTrigger>
                   <AccordionContent className="text-gray-700 space-y-4">
                     <p>
-                      CareConnect está pensado para cualquier persona que necesite apoyo en el cuidado de la salud o desee brindar sus servicios profesionales. Nuestro servicio conecta directamente a:
-                    </p>
-                    <ul className="list-disc pl-5 space-y-2">
-                      <li>
-                        Pacientes y familias que buscan atención confiable, humana y accesible.
-                      </li>
-                      <li>
-                        Cuidadores gerontológicos, asistentes de pacientes, enfermeros y otros profesionales de la salud interesados en ofrecer sus servicios por contrato.
-                      </li>
-                    </ul>
-                    <p>
-                      A través de WhatsApp, nuestro equipo gestiona las conexiones y asegura que cada solicitud se atienda de forma personalizada, sin necesidad de que los usuarios interactúen con una plataforma compleja.
+                      Solo tenés que escribirnos por WhatsApp. Nos encargamos de coordinar todo por vos.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
                 <AccordionTrigger className="font-semibold">¿Qué servicios ofrece CareConnect?</AccordionTrigger>
                 <AccordionContent className="text-gray-700">
-                  <ul className="list-disc pl-5 space-y-2">
-                    <li>
-                      <strong>Gestión de citas personalizada:</strong> Coordinamos por ti la disponibilidad del profesional ideal y agendamos la consulta según tus horarios.
-                    </li>
-                    <li>
-                      <strong>Seguimiento del cuidado:</strong> Llevamos un registro interno de cada servicio prestado, facilitando la continuidad del tratamiento y la comunicación entre profesional y paciente.
-                    </li>
-                    <li>
-                      <strong>Conexiones a la medida:</strong> Analizamos tu necesidad y te conectamos con el profesional más adecuado para tu situación, ya sea un enfermero, asistente o cuidador especializado.
-                    </li>
-                    <li>
-                      <strong>Bitácoras y reportes del servicio:</strong> El profesional registra sus observaciones y cuidados en cada visita, y nuestro equipo te comparte los reportes relevantes para mantenerte al tanto.
-                    </li>
-                    <li>
-                      <strong>Soporte humano constante:</strong> Siempre estarás acompañado. Ante cualquier duda, urgencia o necesidad de ajuste, podés escribirnos directamente y nosotros lo gestionamos.
-                    </li>
-                  </ul>
+                  <p>
+                    Ofrecemos atención médica y cuidados a domicilio, seguimiento del servicio y coordinación de citas según tus necesidades.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="font-semibold">¿Cómo puedo confiar en los profesionales?</AccordionTrigger>
+                <AccordionContent className="text-gray-700">
+                  <p>
+                    Todos los profesionales han sido verificados, cuentan con experiencia y referencias. Te conectamos solo con personal capacitado y de confianza.
+                  </p>
                 </AccordionContent>
               </AccordionItem>
               </Accordion>
@@ -284,58 +293,74 @@ export default function LandingPage() {
         </main>
 
         {/* Footer */}
-        <footer className="bg-purple-900 text-white py-10">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-between items-center text-center md:text-left">
-              
-              {/* Logo y Eslogan */}
-              <div className="w-full md:w-1/3 mb-6 md:mb-0">
-                <div className="flex items-center justify-center md:justify-start space-x-3">
-                  <Image 
-                    src="/careconnect_logo.png" 
-                    alt="Logo de CareConnect" 
-                    width={60} 
-                    height={60} 
-                  />
-                  <div>
-                    <p className="text-lg font-semibold">CareConnect</p>
-                    <p className="text-sm text-purple-300">Conectando el cuidado, un hogar a la vez.</p>
-                  </div>
-                </div>
-              </div>
+        <footer className="bg-purple-800 text-white py-10 px-6">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-10">
 
-              {/* Redes Sociales */}
-              <div className="w-full md:w-1/3 mb-6 md:mb-0 flex justify-center">
-                <div className="text-center">
-                  <h3 className="text-lg font-semibold mb-2">Síguenos</h3>
-                  <a 
-                    href="https://www.instagram.com/careconnect.cr/" 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-purple-300 hover:text-white transition-colors"
-                  >
-                    Instagram
-                  </a>
-                </div>
-              </div>
-
-              {/* Derechos Reservados */}
-              <div className="w-full md:w-1/3 text-sm text-center md:text-right">
-                <p>&copy; {new Date().getFullYear()} CareConnect</p>
-                <p>Todos los derechos reservados.</p>
-              </div>
+            {/* Logo + Slogan */}
+            <div className="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-1/3">
+              <Image src="/careconnect_logo.png" alt="Logo de CareConnect" width={60} height={60} />
+              <p className="mt-2 text-lg font-semibold">CareConnect</p>
+              <p className="mt-1 text-sm text-purple-300">Conectando el cuidado, un hogar a la vez.</p>
             </div>
 
-            {/* Línea Divisoria */}
-            <div className="border-t border-purple-700 my-6"></div>
+            {/* Contacto y redes */}
+            <div className="w-full md:w-1/3 text-center">
+              <h3 className="text-lg font-semibold mb-4">Contáctanos</h3>
 
-            {/* Nota Final */}
-            <div className="text-center text-sm text-purple-300">
-              Gracias por confiar en nosotros para cuidar lo que más importa.
+              <div className="flex justify-center gap-6 mb-4">
+                {/* Instagram */}
+                <a
+                  href="https://www.instagram.com/careconnect.cr/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-purple-300 transition-colors"
+                  title="Instagram"
+                >
+                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .2 2.4.4.6.2 1 .5 1.4 1 .4.4.8.8 1 1.4.2.4.3 1.2.4 2.4.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 2-.4 2.4-.2.6-.5 1-1 1.4-.4.4-.8.8-1.4 1-.4.2-1.2.3-2.4.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.2-2.4-.4-.6-.2-1-.5-1.4-1-.4-.4-.8-.8-1-1.4-.2-.4-.3-1.2-.4-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-2 .4-2.4.2-.6.5-1 1-1.4.4-.4.8-.8 1.4-1 .4-.2 1.2-.3 2.4-.4C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 0 5.6 0 4.5.1 3.6.4 2.6.7 1.8 1.2 1 2S.7 3.4.4 4.4C.1 5.5 0 6.6 0 8v8c0 1.4.1 2.5.4 3.6.3 1 .8 1.8 1.6 2.6s1.6 1.3 2.6 1.6C5.5 23.9 6.6 24 8 24h8c1.4 0 2.5-.1 3.6-.4 1-.3 1.8-.8 2.6-1.6s1.3-1.6 1.6-2.6c.3-1.1.4-2.2.4-3.6V8c0-1.4-.1-2.5-.4-3.6-.3-1-.8-1.8-1.6-2.6S21.1.7 20.1.4C19 .1 17.9 0 16.5 0H12zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2 6.2-2.8 6.2-6.2-2.8-6.2-6.2-6.2zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4zm6.4-11.6c-.8 0-1.4.6-1.4 1.4S17.6 7.2 18.4 7.2 19.8 6.6 19.8 5.8 19.2 4.4 18.4 4.4z" />
+                  </svg>
+                </a>
+
+                {/* Facebook */}
+                <a
+                  href="https://www.facebook.com/profile.php?id=61565918283402"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-purple-300 transition-colors"
+                  title="Facebook"
+                >
+                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24h11.492v-9.294H9.691v-3.622h3.126V8.413c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.794.143v3.24l-1.917.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.676V1.325C24 .597 23.403 0 22.675 0z" />
+                  </svg>
+                </a>
+
+                {/* WhatsApp */}
+                <a
+                  href="https://wa.me/50687711311"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-purple-300 transition-colors"
+                  title="WhatsApp"
+                >
+                  <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.15s-.767.967-.94 1.166c-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.019-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.203-.242-.58-.487-.501-.669-.51l-.57-.01c-.198 0-.52.075-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347m-5.421 7.615h-.001a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.86 9.86 0 017.004 2.906 9.865 9.865 0 012.881 7.003c-.003 5.45-4.437 9.884-9.889 9.884M20.66 3.343A11.815 11.815 0 0012.051 0C5.495 0 .164 5.332.16 11.888c0 2.096.547 4.14 1.588 5.945L0 24l6.306-1.654a11.857 11.857 0 005.723 1.459h.005c6.555 0 11.887-5.332 11.891-11.888a11.84 11.84 0 00-3.265-8.574" />
+                  </svg>
+                </a>
+              </div>
+
+              <p className="text-sm">WhatsApp: <a href="https://wa.me/50687711311" className="underline hover:text-purple-300">+506 8771 1311</a></p>
+            </div>
+
+            {/* Legal */}
+            <div className="w-full md:w-1/3 text-center md:text-right text-sm flex flex-col justify-between">
+              <p>&copy; {new Date().getFullYear()} CareConnect</p>
+              <p>Todos los derechos reservados.</p>
+              <p className="text-purple-300 mt-4 md:mt-0">Gracias por confiar en nosotros para cuidar lo que más importa.</p>
             </div>
           </div>
-        </footer>
-
+        </div>
+      </footer>
       </div>
     </>
   );
